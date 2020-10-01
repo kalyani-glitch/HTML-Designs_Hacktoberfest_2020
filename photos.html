@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+ 
+		<title>jQuery hislide Demo</title>
+   <style>
+   *{
+     margin:0;
+     padding:0;
+   }
+    .slideshow{
+      position: absolute;
+      margin: 0 auto;
+      padding-top: 50px; 
+      height: 700px;
+      background-color:rgb(139, 123, 139);
+      box-sizing: border-box;
+    }
+    .content{
+      margin: auto;
+      width: 190px;
+      perspective: 1000px;
+      position: relative;
+      padding-top 80px;
+    }
+    .content-carrousel{
+      width: 100%;
+      position: absolute;
+      float: right;
+      animation: rotar 15s infinite linear;
+      transform-style: preserve-3d;
+    }
+    .content-carrousel:hover{
+       animation-play-state:paused ;
+       cursor: pointer;
+    }
+    .content-carrousel figure{
+      width: 100%;
+      height: 120px;
+      border: 1px solid #4d444d;
+      overflow: hidden;
+      position: absolute;
+    }
+    .content-carrousel figure:nth-child(1){
+      transform: rotateY(0deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(2){
+      transform: rotateY(36deg) translateZ(300px);
+    }
+
+    .content-carrousel figure:nth-child(3){
+      transform: rotateY(72deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(4){
+      transform: rotateY(108deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(5){
+      transform: rotateY(144deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(6){
+      transform: rotateY(180deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(7){
+      transform: rotateY(216deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(8){
+      transform: rotateY(252deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(9){
+      transform: rotateY(288deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(10){
+      transform: rotateY(324deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(11){
+      transform: rotateY(360deg) translateZ(300px);
+    }
+   .slideshow{
+     position: absolute;
+     box-shadow: 0px 0pz 20px 0px #000;
+     border-radius: 2px;
+   }
+   .content-carrousel img{
+     image-rendering: auto;
+     transition: all 300ms;
+     width: 100%;
+     height: 100%;
+   }
+   .content-carrousel img:hover{
+     transform: scale(1.2);
+     transition: all 300ms;
+   }
+   @keyframes rotar{
+     from{
+       transform: rotateY(0deg);
+     }to{
+       transform: rotateY(360deg);
+     }
+   }
+   </style>                 
+
+</head>
+<body style="background-color: rgb(139, 123, 139);">
+<section class="slideshow">
+  <div class="content">
+    <div class="content-carrousel">
+     <figure class="shadow"><img src="https://content3.jdmagicbox.com/comp/bardhaman/m7/9999px342.x342.150429153627.p6m7/catalogue/burdwan-municipal-girls-high-school-kalibazar-para-bardhaman-schools-zvb75threo.jpg"></figure>
+     <figure class="shadow"><img src="https://lh3.googleusercontent.com/proxy/3d662bi0wZC7XapA6_-ud9-i57N4GM3xnFPGg4Q19ZZeWR6Kv5bbyztia_EniRP9O0Zf_4nCBy_3R-OS2gMPHGytOQD7KsCbydjOSMBSlxqROyQbVvhdLIUBTPYr9_IHwQ"></figure>
+     <figure class="shadow"><img src="https://www.bmhschool.com/images/staff.jpg"></figure>
+     <figure class="shadow"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSr21zDR5BlSz-TKv4j0d20qsQF0UiKNtV1_i_h3xvdxSche8Ux&usqp=CAU"></figure>
+     <figure class="shadow"><img src="https://lh3.googleusercontent.com/proxy/T0s_W_aeL8wL2zSf7y-IV8N4y83RK-IvygKRwvXpNJiHnhfFRIa3ESACWrc7xQPTZGcM2qs8kzNkF6Ci4_fOox8kgQ8lLMVSg2Tby7Uj7S6iyVERRB3e1YWh-8o5xi01GeZepnhEs6PSdvVXekxHWw"></figure>
+     <figure class="shadow"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRT-aM7QUtsANkxEwgiPu_p1fy4QvUBAqRKpi46cHMYVv6QqESo&usqp=CAU"></figure>
+     <figure class="shadow"><img src="https://i0.wp.com/epurbabardhaman.com/wp-content/uploads/2019/03/Teachers-protest-against-installation-a-sound-recorder-with-CCTV-cameras-in-the-staffroom.-Burdwan-Municipal-Girls-High-School-2.jpg?ssl=1"></figure>
+     <figure class="shadow"><img src="https://content3.jdmagicbox.com/comp/bardhaman/m7/9999px342.x342.150429153627.p6m7/catalogue/burdwan-municipal-girls-high-school-kalibazar-para-bardhaman-schools-3smz4xn3kw-250.jpg"></figure>
+     <figure class="shadow"><img src="https://photolib.wn.com/photolib/5d/11/4f6072b7e9fd2fd02a320f10d3c0_large.jpg"></figure>
+     <figure class="shadow"><img src="https://i.ytimg.com/vi/tjRoVINGzjY/hqdefault.jpg"></figure>
+     <figure class="shadow"><img src="https://i.ytimg.com/vi/Es2lNV-Bzeg/hqdefault.jpg"></figure>
+    </div>
+  </div>
+</section>
+</body>
+</html>
